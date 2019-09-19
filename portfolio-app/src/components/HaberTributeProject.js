@@ -49,7 +49,7 @@ function HaberTributePage() {
             className="grow"
             width="600px"
             style ={{borderStyle: "inset"}}
-            src="https://i.imgur.com/mKk5IY6.png" 
+            src="https://i.imgur.com/6TINTDt.png" 
             alt=""/>
             </a>
           </div>
@@ -59,7 +59,7 @@ function HaberTributePage() {
             <p>Click on the image above, the app will load in a new tab.</p>
             <h2>How To Use</h2>
             <p >
-              Click the available panels and learn about a contraversial figure in Fritz Haber
+              Click the available panels and learn about a controversial figure in Fritz Haber
             </p>
           </div>
           <div>
@@ -67,7 +67,7 @@ function HaberTributePage() {
             {Chips()}
             <ul>
                 <li>jQuery Event handling</li>
-                <li>Font Awsome icons</li>
+                <li>Font Awesome icons</li>
                 <li>Mobile Responsive</li>
             </ul>
           </div>

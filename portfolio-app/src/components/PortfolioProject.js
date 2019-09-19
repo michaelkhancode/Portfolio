@@ -53,8 +53,8 @@ function PortfolioProject() {
           <h1>Technical Info:</h1>
             {Chips()}
             <ul>
-              <li>100% Responsive to accomidate viewports of any size</li>
-              <li>Simple routing handled entirly on the front end</li>
+              <li>100% Responsive to accommodate viewports of any size</li>
+              <li>Simple routing handled entirely on the front end</li>
             </ul>
           </div>
       </div>

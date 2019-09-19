@@ -46,8 +46,9 @@ function RobofriendsProject() {
             <img 
             className="grow"
             width="600px"
+            width="500px"
             style ={{borderStyle: "inset"}}
-            src="https://i.imgur.com/0hPjVR7.png" 
+            src="https://i.imgur.com/J3aGYtv.png" 
             alt=""/>
             </a>
           </div>
@@ -66,7 +67,7 @@ function RobofriendsProject() {
             {Chips()}
             <ul>
               <li>Redux used to manage state</li>
-              <li>Asynchronus API calls</li>
+              <li>Asynchronous API calls</li>
               <li>Hiding and showing information upon state changes</li>
             </ul>
           </div>

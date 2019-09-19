@@ -49,7 +49,7 @@ function TimerProject() {
             className="grow"
             width="600px"
             style ={{borderStyle: "inset"}}
-            src="https://i.imgur.com/0hPjVR7.png" 
+            src="https://i.imgur.com/mCv7XxZ.png" 
             alt=""/>
             </a>
           </div>
@@ -68,7 +68,7 @@ function TimerProject() {
             {Chips()}
             <ul>
               <li>Both stateful components</li>
-              <li>Asychronous javascript functions</li>
+              <li>Asynchronous javascript functions</li>
             </ul>
           </div>
       </div>

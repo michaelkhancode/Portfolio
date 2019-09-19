@@ -49,7 +49,7 @@ function ToDoListProject() {
             className="grow"
             width="600px"
             style ={{borderStyle: "inset"}}
-            src="https://i.imgur.com/mKk5IY6.png" 
+            src="https://i.imgur.com/DUDMDkj.png" 
             alt=""/>
             </a>
           </div>
@@ -59,7 +59,7 @@ function ToDoListProject() {
             <p>Click on the image above, the app will load in a new tab.</p>
             <h2>How To Use</h2>
             <p >
-              Use the + icon to to add a new to-do item.
+              Use the + icon to add a new to-do item.
               <br/>
               Click on a listed to-do item to cross it off your list.
               <br/>
@@ -71,7 +71,7 @@ function ToDoListProject() {
             {Chips()}
             <ul>
               <li>jQuery Event handling</li>
-              <li>Font Awsome icons</li>
+              <li>Font Awesome icons</li>
             </ul>
           </div>
       </div>

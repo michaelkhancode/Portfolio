@@ -59,13 +59,13 @@ function BlogProject() {
           <div className="projectImage">     
             <a
             target="_blank" 
-            href="https://mysterious-thicket-23358.herokuapp.com/"
+            href="https://frozen-dawn-72805.herokuapp.com/blogs"
             >
             <img 
             className="grow"
             width="600px"
             style ={{borderStyle: "inset"}}
-            src="https://i.imgur.com/0hPjVR7.png" 
+            src="https://i.imgur.com/2sJPoqe.png" 
             alt=""/>
             </a>
           </div>

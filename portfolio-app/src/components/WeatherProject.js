@@ -59,7 +59,7 @@ function YelpCampProject() {
             <p>Click on the image above, the app will load in a new tab.</p>
             <h2>How To Use</h2>
             <p >
-              Allow the App to use your location or, enter a location and recieve the 5-day forcast.
+              Allow the App to use your location or, enter a location and receive the 5-day forecast.
             </p>
           </div>
           <div>
