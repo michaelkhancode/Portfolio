@@ -1,0 +1,23 @@
+.contentWrapper {
+    margin:auto;
+    width:700px;
+}
+
+.flexWrapper {
+    /* margin: auto; */
+    /* width: 700px; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
+
+@media (max-width: 820px) {
+    .contentWrapper {
+        margin:auto;
+        width:auto;
+
+    }
+  }
+ 
+
+/* style={{width:"900px", margin:"auto"}} */
