@@ -1,22 +1,23 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
+import React from "react";
+import PropTypes from "prop-types";
+import { makeStyles } from "@material-ui/core/styles";
+import AppBar from "@material-ui/core/AppBar";
+import Tabs from "@material-ui/core/Tabs";
+import Tab from "@material-ui/core/Tab";
+import Typography from "@material-ui/core/Typography";
+import Box from "@material-ui/core/Box";
 import RGBProject from "./RGBProject";
 import FaceScannerProject from "./FaceScannerProject";
 import PortfolioProject from "./PortfolioProject";
 import YelpCampProject from "./YelpCampProject";
 import WeatherProject from "./WeatherProject";
 import QuoteGenProject from "./QuoteGenProject";
-import ToDoListProject from './ToDoListProject';
-import HaberTributePage from './HaberTributeProject';
-import BlogProject from './BlogProject';
-import RobofriendsProject from './RobofriendsProject';
-import TimerProject from './TimerProject';
+import ToDoListProject from "./ToDoListProject";
+import HaberTributePage from "./HaberTributeProject";
+import BlogProject from "./BlogProject";
+import RobofriendsProject from "./RobofriendsProject";
+import TimerProject from "./TimerProject";
+import EcomAnime from "./EcomAnime";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -44,14 +45,14 @@ TabPanel.propTypes = {
 function a11yProps(index) {
   return {
     id: `scrollable-force-tab-${index}`,
-    'aria-controls': `scrollable-force-tabpanel-${index}`,
+    "aria-controls": `scrollable-force-tabpanel-${index}`,
   };
 }
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    width: '100%',
+    width: "100%",
     backgroundColor: theme.palette.background.paper,
   },
 }));
@@ -65,10 +66,10 @@ export default function ScrollableTabsButtonForce() {
   }
 
   return (
-    <div >
-        <div className={classes.root}>
+    <div>
+      <div className={classes.root}>
         <AppBar position="static" color="default">
-            <Tabs
+          <Tabs
             value={value}
             onChange={handleChange}
             variant="scrollable"
@@ -76,29 +77,33 @@ export default function ScrollableTabsButtonForce() {
             indicatorColor="primary"
             textColor="primary"
             aria-label="scrollable force tabs example"
-            >
-            <Tab label="RGB Color Game"  {...a11yProps(0)} />
-            <Tab label="Face Scanner"  {...a11yProps(1)} />
-            <Tab label="Yelp For Campers"  {...a11yProps(2)} />
-            <Tab label="This Website"  {...a11yProps(3)} />
-            <Tab label="Weather App"  {...a11yProps(4)} />
-            <Tab label="Inspirational Quote Generator"  {...a11yProps(5)} />
-            <Tab label="To Do List"  {...a11yProps(6)} />
-            <Tab label="Haber Bio Page"  {...a11yProps(7)} />
-            <Tab label="Public Blog Page"  {...a11yProps(8)} />
-            <Tab label="Friends Page"  {...a11yProps(9)} />
-            <Tab label="Stopwatch/Countdown"  {...a11yProps(10)} />
-            </Tabs>
+          >
+            <Tab label="Ecommerce Store" {...a11yProps(0)} />
+            <Tab label="RGB Color Game" {...a11yProps(1)} />
+            <Tab label="Face Scanner" {...a11yProps(2)} />
+            {/* <Tab label="Yelp For Campers" {...a11yProps(2)} /> */}
+            <Tab label="This Website" {...a11yProps(3)} />
+            <Tab label="Weather App" {...a11yProps(4)} />
+            <Tab label="Inspirational Quote Generator" {...a11yProps(5)} />
+            <Tab label="To Do List" {...a11yProps(6)} />
+            <Tab label="Haber Bio Page" {...a11yProps(7)} />
+            {/* <Tab label="Public Blog Page" {...a11yProps(8)} /> */}
+            <Tab label="Friends Page" {...a11yProps(8)} />
+            <Tab label="Stopwatch/Countdown" {...a11yProps(9)} />
+          </Tabs>
         </AppBar>
         <TabPanel value={value} index={0}>
-            <RGBProject />
+          <EcomAnime />
         </TabPanel>
         <TabPanel value={value} index={1}>
-            <FaceScannerProject />
+          <RGBProject />
         </TabPanel>
         <TabPanel value={value} index={2}>
-          <YelpCampProject />
+          <FaceScannerProject />
         </TabPanel>
+        {/* <TabPanel value={value} index={2}>
+          <YelpCampProject />
+        </TabPanel> */}
         <TabPanel value={value} index={3}>
           <PortfolioProject />
         </TabPanel>
@@ -114,16 +119,16 @@ export default function ScrollableTabsButtonForce() {
         <TabPanel value={value} index={7}>
           <HaberTributePage />
         </TabPanel>
-        <TabPanel value={value} index={8}>
+        {/* <TabPanel value={value} index={8}>
           <BlogProject />
-        </TabPanel>
-        <TabPanel value={value} index={9}>
+        </TabPanel> */}
+        <TabPanel value={value} index={8}>
           <RobofriendsProject />
         </TabPanel>
-        <TabPanel value={value} index={10}>
+        <TabPanel value={value} index={9}>
           <TimerProject />
         </TabPanel>
-        </div>
+      </div>
     </div>
   );
 }
