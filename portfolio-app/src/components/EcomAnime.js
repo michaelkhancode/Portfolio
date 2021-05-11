@@ -126,8 +126,8 @@ function EcomAnime() {
             password: W+6o@kDJ
             <br />
             <br />
-            **Note this project is active and still in development bugs may be
-            present**
+            **Note this project is active and still in development more features
+            to come**
           </p>
         </div>
         <div>
